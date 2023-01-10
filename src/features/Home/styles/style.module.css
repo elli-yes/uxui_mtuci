@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+}
+
+.title {
+  color: white;
+  font-size: 4rem;
+  padding-top: 12rem;
+  align-self: flex-start;
+}
+
+.tasksLink {
+  color: white;
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 0.25rem 1rem;
+  border-bottom: solid 1px transparent;
+}
+
+.tasksLink:hover {
+  border-bottom: solid 1px white;
+}

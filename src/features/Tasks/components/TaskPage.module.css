@@ -1,0 +1,60 @@
+.title {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.subtitle {
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.counterContainer{
+  max-width: 43rem;
+  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.bricksContainer {
+  min-height: 4rem;
+  margin: 8rem 0 2rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  transition: width 2s;
+}
+.brick {
+  position: relative;
+  flex-shrink: 0;
+  border: 0.25rem solid white;
+  height: 4rem;
+  width: 1.5rem;
+  margin-left: 0.25rem;
+
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+.controll {
+  width: 8rem;
+  padding: 1rem 0.5rem;
+  background-color: white;
+  margin: 0 0.5rem;
+}
+.controll:disabled {
+  background-color: white;
+  opacity: 0.5;
+}
+
+@keyframes example {
+  from {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
